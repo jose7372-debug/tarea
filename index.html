@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
+  <title>Filtros Tailwind</title>
+</head>
+<body class="bg-green-100 min-h-screen py-10">
+
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- Título -->
+    <h1 class="text-3xl font-bold text-red-600 text-center mb-2">
+      Hola mundo, probando Tailwind
+    </h1>
+    <h2 class="text-xl text-blue-900 text-center mb-10">
+      Tailwind por: Jose Daniel Rodriguez Condori
+    </h2>
+
+    <!-- Grid de las 6 imágenes -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- 1. Blur -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="text-sm font-medium text-gray-700 mb-2">1. Blur</p>
+        <img class="w-full h-48 object-cover rounded blur-md" 
+             src="imagen/ima1.jpg" alt="Filtro blur">
+      </div>
+
+      <!-- 2. Transparente -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="text-sm font-medium text-gray-700 mb-2">2. Transparente</p>
+        <img class="w-full h-48 object-cover rounded opacity-40" 
+             src="imagen/ima2.jpg" alt="Filtro transparente">
+      </div>
+
+      <!-- 3. Escala de grises -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="text-sm font-medium text-gray-700 mb-2">3. Escala de grises</p>
+        <img class="w-full h-48 object-cover rounded grayscale" 
+             src="imagen/ima3.jpg" alt="Escala de grises">
+      </div>
+
+      <!-- 4. Intensidad (brightness) -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="text-sm font-medium text-gray-700 mb-2">4. Intensidad</p>
+        <img class="w-full h-48 object-cover rounded brightness-150" 
+             src="imagen/ima4.jpg" alt="Filtro intensidad">
+      </div>
+
+      <!-- 5. Opacidad -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="text-sm font-medium text-gray-700 mb-2">5. Opacidad</p>
+        <img class="w-full h-48 object-cover rounded opacity-70" 
+             src="imagen/ima5.jpg" alt="Filtro opacidad">
+      </div>
+
+      <!-- 6. Libre (sepia) -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="text-sm font-medium text-gray-700 mb-2">6. Libre (sepia)</p>
+        <img class="w-full h-48 object-cover rounded sepia" 
+             src="imagen/ima6.jpg" alt="Filtro libre">
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
